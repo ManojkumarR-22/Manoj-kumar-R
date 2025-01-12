@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            max-width: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #ff5722;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Delicious Eats</h1>
+    </header>
+
+    <div class="container">
+        <section class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Bruschetta</h3>
+                    <p>Grilled bread with fresh tomatoes, garlic, and basil.</p>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Stuffed Mushrooms</h3>
+                    <p>Cheesy mushrooms stuffed with herbs and breadcrumbs.</p>
+                    <p class="price">$7.99</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Grilled Salmon</h3>
+                    <p>Perfectly grilled salmon served with seasonal vegetables.</p>
+                    <p class="price">$18.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian pasta with creamy sauce and pancetta.</p>
+                    <p class="price">$14.99</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a gooey center.</p>
+                    <p class="price">$8.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Tiramisu</h3>
+                    <p>Traditional Italian dessert with layers of coffee-soaked ladyfingers.</p>
+                    <p class="price">$7.99</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
