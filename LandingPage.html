@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            margin: 40px 0;
+        }
+
+        .testimonial {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid #0077cc;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta button {
+            background: #0077cc;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background: #005fa3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0077cc;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Awesome Product</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#cta">Buy Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover the Future with Awesome Product</h1>
+    </section>
+
+    <div class="container">
+        <section id="features" class="features">
+            <div class="feature">
+                <img src="../cetaphil.jpg" alt="Feature 1">
+                <h3>Cetaphil Cleaner</h3>
+                <p>Cetaphil products are proven to be good for a range of skin types, helping to protect against the 5 signs of sensitivity.</p>
+            </div>
+            <div class="feature">
+                <img src="../cetaphil2.jpg" alt="Feature 2">
+                <h3>Cetaphil Night Cream</h3>
+                <p>Cetaphil products are proven to be good for a range of skin types, helping to protect against the 5 signs of sensitivity.</p>
+            </div>
+            <div class="feature">
+                <img src="../cetaphil3.jpg" alt="Feature 3">
+                <h3>Cetaphil oily cream</h3>
+                <p>Cetaphil products are proven to be good for a range of skin types, helping to protect against the 5 signs of sensitivity.</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"This product changed my life! Highly recommend to everyone." - Tejashwini</p>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing features and fantastic support team. A+ experience!" - Tanuja</p>
+            </div>
+        </section>
+
+        <section id="cta" class="cta">
+            <h2>Get Started Today!</h2>
+            <button>Buy Now</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Awesome Product. All rights reserved.</p>
+    </footer>
+</body>
+</html>
